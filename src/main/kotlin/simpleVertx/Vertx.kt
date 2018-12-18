@@ -1,0 +1,4 @@
+package simpleVertx
+
+interface Vertx {
+}
