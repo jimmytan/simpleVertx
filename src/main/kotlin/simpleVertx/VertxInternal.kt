@@ -1,10 +1,13 @@
 package simpleVertx
 
 import io.netty.channel.EventLoopGroup
+import simpleVertx.core.context.Context
 
 interface VertxInternal : Vertx{
-  fun getEventLoopGroup(): EventLoopGroup
+  val eventLoopGroup: EventLoopGroup
 
-  fun getAcceptorEventLoopGroup(): EventLoopGroup
+  val acceptorEventLoopGroup: EventLoopGroup
+
+  fun getOrCreateContext(): Context
 
 }

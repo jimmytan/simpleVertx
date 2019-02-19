@@ -7,9 +7,4 @@ import simpleVertx.core.http.HttpServer
 interface Vertx {
   fun createHttpServer(): HttpServer
 
-  fun getOrCreateContext(): Context
-
-  fun getEvenloopGroup(): EventLoopGroup
-
-
 }
